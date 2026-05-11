@@ -34,7 +34,7 @@ public class EmailController {
   public EmailController(
       ImapEmailService imapEmailService,
       ServiceCatalog serviceCatalog,
-      @Value("${app.email.allowed-domains:dadtvplay.com,gmail.com}") String allowedDomainsValue
+      @Value("${app.email.allowed-domains:dadtvplay.com,gmail.com,hotmail.com}") String allowedDomainsValue
   ) {
     this.imapEmailService = imapEmailService;
     this.serviceCatalog = serviceCatalog;
